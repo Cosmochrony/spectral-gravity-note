@@ -23,6 +23,13 @@
 \theoremstyle{definition}
 \newtheorem{remark}{Remark}
 
+\newcommand{\SPI}{\mathcal{S}_\Pi}
+\newcommand{\Ag}{A_g}
+\newcommand{\lsp}{\ell_{\mathrm{sp}}}
+\newcommand{\GN}{G_{\mathrm{N}}}
+\newcommand{\cEH}{c_{\mathrm{EH}}}
+\newcommand{\cBI}{c_{\mathrm{BI}}}
+
 \title{The Spectral Gravity Sub-Programme\\[0.4em]
 \large Presentation Note 4}
 
@@ -37,28 +44,517 @@
   \maketitle
 
   \begin{abstract}
-    % TODO: write abstract.
+    The spectral gravity sub-programme of the Cosmochrony corpus addresses a single
+    central question: why does the effective metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ satisfy
+    the Einstein equations?
+    Starting from the projective spectral entropy functional
+    $\SPI[g] = \tfrac{1}{2}\log\det' A_g$, the sub-programme derives the Einstein tensor
+    as the infrared-dominant response of the renormalized metric variation, reformulates
+    it as a spectral equilibrium condition, extends it causally to gravitational wave
+    propagation, and provides its ultraviolet Born--Infeld completion.
+    The logical chain is:
+    \[
+      \SPI[g]
+      \;\Longrightarrow\;
+      \delta_{g}\SPI \ni \cEH G_{\mu\nu}
+      \;\Longrightarrow\;
+      G_{\mu\nu} = 8\pi\GN T_{\mu\nu}^{(\Pi)}
+      \;\Longrightarrow\;
+      \text{causal completion}
+      \;\Longrightarrow\;
+      \text{BI completion}.
+    \]
+    The sub-programme is constituted by four papers: Gravity~3.0, Thermodynamics,
+    Lorentz/CausalPropagation, and BornInfeld.
+    The scope is the gravitational sector in the absence of matter; full coupled field equations
+    $G_{\mu\nu} = 8\pi\GN T_{\mu\nu}$ with matter in Lorentzian signature remain an open
+    deliverable.
   \end{abstract}
 
-  \section{Introduction}
-  % TODO
+  \medskip
+  \noindent\textbf{Keywords.}
+  spectral gravity; Seeley--DeWitt expansion; Einstein tensor; spectral entropy; induced gravity;
+  Born--Infeld completion; gravitational waves; Lorentzian completion; spectral equilibrium;
+  non-injective projection; presentation note.
 
-  \section{Central Question}
-  % TODO
+  \newpage
+  \tableofcontents
 
-  \section{Logical Chain}
-  % TODO
+  \newpage
+
+  \section{Motivation and Central Question}
+    \label{sec:motivation}
+
+    The spectral gravity sub-programme answers the following question.
+
+    \medskip
+    \noindent\textit{Central question.}
+    The emergent geometry sub-programme (Note~2) derives the effective Lorentzian metric
+    $g^{\mu\nu} = 2\eta^{\mu\nu}$ as a forced consequence of the admissibility structure.
+    It does not explain why this metric is dynamical, nor why its dynamics takes the Einstein
+    form.
+    \textit{Why does the projective spectral entropy functional $\SPI[g]$ produce the Einstein
+    equations as its metric variation?}
+
+    \medskip
+    More precisely: define $A_g = -\nabla_g^2$ as the minimal admissible Laplace-type
+    operator on the effective four-dimensional manifold $M$, and
+    \[
+      \SPI[g] = \tfrac{1}{2}\log\det' A_g
+    \]
+    as the projective spectral entropy functional.
+    The question is: what is the geometric content of $\delta\SPI/\delta g^{\mu\nu}$, and
+    in which regime does it reduce to the Einstein tensor?
+
+    \medskip
+    The answer has four stages resolved by four papers.
+    Gravity derives the Einstein tensor as the $a_2$ infrared response.
+    Thermodynamics reformulates this as a spectral equilibrium condition equivalent to
+    the Einstein field equations.
+    Lorentz/CausalPropagation completes the construction causally and identifies
+    gravitational waves as infrared probes of the pre-geometric scale.
+    BornInfeld provides the unique ultraviolet completion of the Einstein--Hilbert sector.
+
+    \begin{remark}[Scope: gravity sector only]
+This sub-programme closes the gravitational dynamics in the absence of matter.
+The coupled system $G_{\mu\nu} = 8\pi\GN T_{\mu\nu}$ with explicit matter in Lorentzian
+signature is an open deliverable listed in Section~\ref{sec:open}.
+The gauge dynamics ($a_4$ Yang--Mills response from the vertical variation) belongs to
+Note~8 (Gauge--Gravity Stratification Sub-Programme).
+    \end{remark}
+
+    \begin{remark}[Distinction from Note~2]
+Note~2 (Emergent Geometry) closes the \emph{reconstruction} of the metric:
+$\Pi_q \to g^{\mu\nu} = 2\eta^{\mu\nu}$.
+Note~4 (Spectral Gravity) closes the \emph{dynamics} of the metric:
+$\SPI[g] \to G_{\mu\nu} = 8\pi\GN T_{\mu\nu}^{(\Pi)}$.
+The two notes address logically distinct questions and should not be conflated.
+    \end{remark}
+
+  \section{Position in the Cosmochrony Programme}
+    \label{sec:position}
+
+    The spectral gravity sub-programme takes the following inputs.
+
+    From Branch~I (axiomatic primitive): the non-injective projection $\Pi$ generates a
+    spectral entropy $\SPI > 0$ as a structural consequence of non-injectivity
+    (ENI~\cite{Beau2026l}); the Born--Infeld saturation functional and the spectral length
+    scale $\lsp$ are Branch~I objects.
+
+    From Note~2 (emergent geometry): the effective four-dimensional Lorentzian manifold
+    $(M, g^{\mu\nu})$ with $g^{\mu\nu} = 2\eta^{\mu\nu}$ and the minimal admissible
+    Laplace-type operator $A_g = -\nabla_g^2$ (Q5b--Q11).
+
+    From Note~3 (gauge structure): the admissible principal bundle $P_{G_\Pi}(M, G_\Pi)$,
+    used in the gauge-extended functional $\SPI[g, A]$ of Q12--Q13 (Note~8 consumer).
+
+    \medskip
+    The outputs of the sub-programme feed directly into:
+    \begin{itemize}
+      \item Note~8 (Gauge--Gravity Stratification): the horizontal $a_2$ Einstein sector and the
+      vertical $a_4$ Yang--Mills sector are derived from the same functional.
+      \item Q13 (Einstein--Yang--Mills synthesis): the coupled $G_{\mu\nu} = 8\pi\GN T_{\mu\nu}^{\mathrm{YM}}$ system.
+      \item Cosmological and phenomenological applications: gravitational wave predictions,
+      galaxy rotation, Hubble tension.
+    \end{itemize}
+
+  \section{Logical Chain of the Sub-Programme}
+    \label{sec:chain}
+
+    \begin{equation}
+      \label{eq:chain}
+      \underbrace{\SPI[g] = \tfrac{1}{2}\log\det' \Ag}_{\text{spectral entropy}}
+      \;\Longrightarrow\;
+      \underbrace{\delta_g\SPI \ni \cEH G_{\mu\nu}}_{\substack{a_2\text{ pole} \\ \text{IR dominant}}}
+      \;\Longrightarrow\;
+      \underbrace{G_{\mu\nu} = 8\pi\GN T_{\mu\nu}^{(\Pi)}}_{\substack{\text{spectral} \\ \text{equilibrium}}}
+    \end{equation}
+    \[
+      \Longrightarrow\;
+      \underbrace{\omega^2 = c^2 k^2 - \gamma\lsp^2 k^4}_{\substack{\text{causal} \\ \text{completion}}}
+      \;\Longrightarrow\;
+      \underbrace{\sqrt{-\det(g + \lsp^2 R)}}_{\substack{\text{BI} \\ \text{completion}}}.
+    \]
+
+    The chain has four conceptually distinct stages.
+
+    \begin{enumerate}
+      \item \textit{IR dominance of the Einstein tensor.}
+      The renormalized metric variation $\delta\SPI^{\mathrm{ren}}/\delta g^{\mu\nu}$ decomposes
+      into an $a_2$-pole term proportional to $G_{\mu\nu}$, an $a_4$-term with quadratic
+      curvature corrections, non-local form factors, and a conformal anomaly.
+      In the weak-curvature regime $R\lsp^2 \ll 1$, the $a_2$ term dominates.
+      This is the IR hierarchy (Gravity~\cite{Beau2026h}).
+
+      \item \textit{Spectral equilibrium.}
+      The diagonal heat kernel defines a local spectral multiplier $\beta(x)^{-1} =
+      \beta_0^{-1} - \tfrac{1}{6}R(x) + O(\nabla^2 R)$.
+      Imposing a spectral equilibrium principle (extremize $\SPI$ at fixed projected matter
+      content) yields the Einstein field equations as a variational Euler--Lagrange condition,
+      without any assumption on causal structure
+      (Thermodynamics~\cite{Beau2026Thermodynamics}).
+
+      \item \textit{Causal completion.}
+      The Lorentzian spectral action is defined via the Schwinger--Keldysh prescription.
+      Linearization about Minkowski spacetime gives two transverse-traceless helicity-$\pm 2$
+      modes and a dispersion relation $\omega^2 = c^2 k^2 - \gamma\lsp^2 k^4$,
+      where $\gamma = 1/(180\zeta)$ with $\zeta = O(1)$
+      (Lorentz/CausalPropagation~\cite{Beau2026i}).
+
+      \item \textit{UV completion.}
+      Under conditions (C1)--(C5) and Hypothesis~[H-ext], the unique admissible tensorial
+      completion of the Einstein--Hilbert sector is the Eddington-inspired Born--Infeld action
+      $\mathcal{S}^{\mathrm{BI}} \propto \int[\sqrt{-\det(g + \lsp^2 R_{\mu\nu})} - \sqrt{-g}]$
+      (Gravity Theorem~1, conditional on~[H-ext]; BornInfeld~\cite{Beau2026c}).
+    \end{enumerate}
 
   \section{Constituent Papers}
-  % TODO
+    \label{sec:papers}
+
+    \subsection{Infrared Einstein response: Gravity 3.0}
+      \label{sec:gravity}
+
+      \textbf{Gravity 3.0}~\cite{Beau2026h} is the foundational paper of the sub-programme.
+      It establishes the projective spectral entropy functional $\SPI[g] = \tfrac{1}{2}\log\det' A_g$
+      for a minimal Laplace-type operator $A_g = -\nabla_g^2$ on a four-dimensional Riemannian
+      manifold, and derives the renormalized metric variation via heat-kernel methods and
+      zeta regularization.
+
+      Three results are established.
+
+      \textit{IR hierarchy} (Theorem of §4.5; structural).
+      The renormalized spectral stress tensor decomposes as
+      \[
+        \frac{\delta\SPI^{\mathrm{ren}}}{\delta g^{\mu\nu}}
+        = \cEH(\mu)\, G_{\mu\nu}
+        + c_\Lambda(\mu)\, g_{\mu\nu}
+        + \beta_{\mathrm{loc}}\, B_{\mu\nu}
+        + T^{\mathrm{non-loc}}_{\mu\nu}
+        + \mathcal{A}_{\mu\nu},
+      \]
+      where $B_{\mu\nu}$ contains quadratic curvature terms ($a_4$), $T^{\mathrm{non-loc}}_{\mu\nu}$
+      are non-local form factors, and $\mathcal{A}_{\mu\nu}$ is the conformal anomaly.
+      In the regime $R\lsp^2 \ll 1$, the $a_2$ Einstein term is infrared-dominant.
+
+      \textit{Induced Newton constant} (§5; structural).
+      The induced coupling scales as $\GN \sim 16\pi^2 \lsp^2$, up to scheme-dependent factors.
+      Newton's constant is not a free parameter: it is set by the same spectral length $\lsp$
+      that governs the BI completion.
+
+      \textit{BI uniqueness} (Theorem~1; conditional on [H-ext]).
+      Under conditions (C1)--(C5) (spectral covariance, Einstein IR limit, algebraic BI saturation,
+      spectral isotropy, coherence extensivity) and Hypothesis [H-ext] (admissible coherence
+      extensivity, structural analogue of [H-color] for the gravitational sector), the unique
+      admissible tensorial UV completion is the Eddington-inspired BI action.
+      Lemmas 2 and 3 (scalar BI reduction and spectral carrier identification) are proved
+      unconditionally; only Lemma~1 (coherence extensivity) is conditional on [H-ext].
+
+      \textit{Structural necessity of non-injective projection} (§7.2; structural).
+      Any genuine emergence with $\SPI > 0$ requires non-injective projection.
+      The gravitational response is therefore structurally tied to the non-injectivity of $\Pi$
+      and cannot arise in a purely injective effective description.
+
+    \subsection{Spectral equilibrium and the Einstein equation: Thermodynamics}
+      \label{sec:thermo}
+
+      \textbf{Thermodynamics}~\cite{Beau2026Thermodynamics} develops the local thermodynamic
+      interpretation of $\SPI[g]$ and derives the Einstein field equations as a spectral
+      equilibrium condition.
+
+      Three results are established.
+
+      \textit{Local spectral multiplier field} (§2; structural).
+      The diagonal heat kernel $K(x, x; t)$ defines a local spectral energy density
+      $u(x; t) = -\partial_t \log K(x, x; t)$, whose Seeley--DeWitt expansion gives the local
+      multiplier:
+      \[
+        \beta(x)^{-1} = \beta_0^{-1} - \tfrac{1}{6}R(x) + O(\nabla^2 R).
+      \]
+      Here $\beta_0^{-1} = 2/t_*$ is a universal UV contribution; the $-\tfrac{1}{6}R(x)$
+      correction is the same $a_2$ coefficient that produces the Einstein tensor in Gravity.
+
+      \textit{Local spectral first law} (§3; structural).
+      The compatibility between the geometric and matter sides of the metric variation
+      gives $\delta\SPI = \int\beta(x)^{-1}\delta E_\Pi(x)$.
+      This is not a postulate but a consequence of the Seeley--DeWitt hierarchy.
+
+      \textit{Einstein equation as spectral equilibrium} (Theorem~4.3; structural).
+      The spectral equilibrium principle: admissible geometries extremize $\SPI$ at fixed
+      projected matter content $W_\Pi[g, \psi]$.
+      The Euler--Lagrange equation is
+      \[
+        G_{\mu\nu} = 8\pi\GN T_{\mu\nu}^{(\Pi)},
+      \]
+      with the factor $8\pi\GN$ fixed by the product of two universal normalizations.
+      No horizon structure, no Rindler wedge, and no Raychaudhuri theorem are required.
+      The derivation is Riemannian; its extension to Lorentzian signature is the content
+      of the Lorentz/CausalPropagation paper.
+
+      The relation to Jacobson's derivation is established in §6: the present framework is
+      structurally parallel but replaces area entropy by $\SPI$, Rindler temperature by
+      $\beta(x)^{-1}$, and horizon equilibrium by variational extremum.
+      The derivations are logically independent.
+
+    \subsection{Causal completion and gravitational waves: Lorentz/CausalPropagation}
+      \label{sec:lorentz}
+
+      \textbf{Lorentz/CausalPropagation}~\cite{Beau2026i} constructs the Lorentzian completion
+      of the spectral entropy framework and establishes the causal propagation of gravitational
+      degrees of freedom.
+
+      Three results are established.
+
+      \textit{Lorentzian spectral action} (§2; structural).
+      The Lorentzian spectral action is defined via the real part of the hyperbolic determinant,
+      equivalently through a Schwinger--Keldysh prescription.
+      This ensures a real and retarded quadratic kernel without additional assumptions.
+
+      \textit{Graviton content} (§3; structural).
+      Linearization about Minkowski spacetime in the regime $R\lsp^2 \ll 1$ and
+      $\omega \ll \lsp^{-1}$ propagates exactly two transverse-traceless tensor modes of
+      helicity $\pm 2$.
+      Scalar and vector sectors remain non-dynamical in the infrared.
+      The polarization content coincides with that of general relativity in the accessible
+      domain.
+
+      \textit{Dispersion relation and $k^4$ correction} (§3; structural).
+      The ratio of Seeley--DeWitt coefficients fixes the universal correction:
+      \[
+        \omega^2 = c^2 k^2 - \gamma\lsp^2 k^4 + O(k^6),
+        \quad \gamma = \frac{1}{180\zeta},
+      \]
+      with $\gamma = 1/30$ in the natural spectral scheme.
+      The additional pole at $k^2 \sim \lsp^{-2}$ lies beyond current observational reach.
+      This structure maps onto the parametrizations used in gravitational-wave catalogues
+      and yields a bound on the pre-geometric scale $\lsp$.
+
+    \subsection{Born--Infeld UV completion: BornInfeld}
+      \label{sec:bi}
+
+      \textbf{BornInfeld}~\cite{Beau2026c} establishes the Born--Infeld structure as the
+      unique gravitational UV completion compatible with bounded-flux propagation and
+      admissible coherence extensivity.
+
+      Its main contribution to the sub-programme is the scalar BI uniqueness result: the
+      saturation bound $|\partial_t\chi| \leq \cBI$ selects a square-root action density in the
+      one-dimensional sector.
+      Combined with Gravity Theorem~1, the tensorial extension gives the Eddington-inspired
+      BI form.
+
+      The parity involution $\chi \mapsto -\chi$ (Lemma~2.1 of BornInfeld) is a direct structural
+      consequence: BI-indiscernibility forces the minimal fibre condition
+      $\Pi^{-1}(y) \supseteq \{\chi, -\chi\}$.
+      This result feeds directly into the O-series (O18) and the parity involution
+      $c \leftrightarrow q - c$ of the pair observable.
+
+      \begin{table}[ht]
+        \centering
+        \caption{Summary of constituent papers by stage.
+        Status: P = proved; S = structural; C = conditional on [H-ext].}
+        \label{tab:papers}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{@{}lllll@{}}
+          \toprule
+          Stage & Paper & Central output & Status \\
+          \midrule
+          IR Einstein response & Gravity~3.0 & $\delta_g\SPI \ni \cEH G_{\mu\nu}$; IR hierarchy & S \\
+          Induced $\GN$ & Gravity~3.0 & $\GN \sim 16\pi^2\lsp^2$ & S \\
+          BI scalar uniqueness & BornInfeld & Scalar BI; parity involution & P \\
+          BI tensorial uniqueness & Gravity Theorem~1 & Eddington-BI form & C ([H-ext]) \\
+          Spectral multiplier field & Thermodynamics & $\beta(x)^{-1} = \beta_0^{-1} - \tfrac{1}{6}R$ & S \\
+          Spectral first law & Thermodynamics & $\delta\SPI = \int\beta^{-1}\delta E_\Pi$ & S \\
+          Einstein as equilibrium & Thermodynamics & $G_{\mu\nu} = 8\pi\GN T_{\mu\nu}^{(\Pi)}$ & S \\
+          Lorentzian completion & Lorentz/CausalProp & Real retarded kernel; Schwinger--Keldysh & S \\
+          Helicity-$\pm 2$ modes & Lorentz/CausalProp & Two TT modes; no scalar in IR & S \\
+          $k^4$ correction & Lorentz/CausalProp & $\gamma = 1/30$; bound on $\lsp$ & S \\
+          \bottomrule
+        \end{tabular}
+      \end{table}
+
+  \section{Inputs from Upstream Results}
+    \label{sec:inputs}
+
+    \begin{enumerate}
+      \item \textbf{Non-injectivity as structural necessity (ENI~\cite{Beau2026l}).}
+      Any genuine emergence with $\SPI > 0$ requires non-injective projection.
+      The existence of the spectral entropy functional is a consequence of this structural
+      necessity, not an independent postulate.
+
+      \item \textbf{Effective four-dimensional manifold $(M, g^{\mu\nu})$ (Note~2).}
+      The sub-programme assumes the effective base manifold derived in Q5b--Q11 and
+      the induced metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ as the starting point for the
+      Laplace-type operator $A_g$.
+      Without Note~2, the operator $A_g$ would lack a canonical definition.
+
+      \item \textbf{Spectral length scale $\lsp$ (Branch~I).}
+      The scale $\lsp$ is the admissibility cutoff that appears in the induced Newton constant
+      $\GN \sim 16\pi^2\lsp^2$ and in the BI completion.
+      Its origin is in the Born--Infeld saturation constant $\cBI$ of the projection dynamics.
+
+      \item \textbf{BI parity involution (BornInfeld, O18).}
+      The minimal fibre condition $\Pi^{-1}(y) \supseteq \{\chi, -\chi\}$ established in
+      BornInfeld~\cite{Beau2026c} and O18 is used in the Gravity uniqueness argument
+      to fix the sign of the spectral carrier.
+    \end{enumerate}
+
+  \section{Outputs to Downstream Branches}
+    \label{sec:outputs}
+
+    \begin{table}[ht]
+      \centering
+      \caption{Principal outputs and downstream consumers.}
+      \label{tab:outputs}
+      \renewcommand{\arraystretch}{1.3}
+      \begin{tabular}{@{}p{5.5cm}p{4.5cm}l@{}}
+        \toprule
+        Output & Consumer & Status \\
+        \midrule
+        $G_{\mu\nu} = 8\pi\GN T_{\mu\nu}^{(\Pi)}$ (matter-free IR) & Q13, Q6b & S \\
+        $\GN \sim 16\pi^2\lsp^2$ & Q12, Q13 & S \\
+        Eddington-BI action & Q13 (EBI joint functional) & C ([H-ext]) \\
+        Helicity-$\pm 2$ gravitons & Cosmology applications & S \\
+        $\omega^2 = c^2 k^2 - \gamma\lsp^2 k^4$ dispersion & GW phenomenology & S \\
+        Bound on $\lsp$ from GW data & Phenomenological notes & S \\
+        BI scalar uniqueness; parity involution & O18, O30 & P \\
+        $a_2 \to$ gravity; $a_4 \to$ gauge (stratification) & Note~8, Q12, Q13 & S \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
 
   \section{Status of Results}
-  % TODO
+    \label{sec:status}
+
+    \subsection{Proved results}
+      \label{sec:proved}
+
+      \begin{enumerate}
+        \item \textit{Scalar BI uniqueness} (BornInfeld~\cite{Beau2026c}):
+        the saturation bound $|\partial_t\chi| \leq \cBI$ selects a unique square-root action
+        in the one-dimensional sector.
+
+        \item \textit{BI parity involution} (BornInfeld, Lemma~2.1):
+        $\mathcal{S}_{\mathrm{BI}}[-\chi] = \mathcal{S}_{\mathrm{BI}}[\chi]$; BI-indiscernibility
+        forces the minimal fibre $\Pi^{-1}(y) \supseteq \{\chi, -\chi\}$.
+
+        \item \textit{Spectral carrier identification} (Gravity Lemma~3; unconditional):
+        the unique two-derivative covariant endomorphism compatible with spectral covariance
+        and isotropy is $X = \lsp^2 g^{-1}R$ with $R_{\mu\nu}$ the Ricci tensor ($\alpha = 0$).
+
+        \item \textit{Scalar BI reduction} (Gravity Lemma~2; unconditional):
+        the eigenvalue function reduces to $h(\lambda) = \tfrac{1}{2}\log(1+\lambda)$,
+        forced by the scalar BI uniqueness result of BornInfeld.
+      \end{enumerate}
+
+    \subsection{Structural results}
+      \label{sec:structural}
+
+      \begin{enumerate}
+        \item \textit{IR hierarchy and IR dominance of $G_{\mu\nu}$}
+        (Gravity §4.5): the $a_2$ Einstein term dominates in the regime $R\lsp^2 \ll 1$.
+        The result is a structural statement about the renormalized spectral stress tensor;
+        it is not an exact derivation valid at all curvature scales.
+
+        \item \textit{Induced Newton constant} (Gravity §5):
+        $\GN \sim 16\pi^2\lsp^2$, up to scheme-dependent factors.
+
+        \item \textit{Spectral multiplier field and first law}
+        (Thermodynamics §2--3): $\beta(x)^{-1}$ is defined from spectral data;
+        the first law $\delta\SPI = \int\beta^{-1}\delta E_\Pi$ is a structural consequence
+        of the Seeley--DeWitt hierarchy.
+
+        \item \textit{Einstein equation as spectral equilibrium}
+        (Thermodynamics Theorem~4.3): the Euler--Lagrange condition yields
+        $G_{\mu\nu} = 8\pi\GN T_{\mu\nu}^{(\Pi)}$ in the IR.
+        No causal structure is assumed; the derivation is Riemannian.
+
+        \item \textit{Lorentzian completion and Schwinger--Keldysh prescription}
+        (Lorentz/CausalPropagation §2): the real retarded kernel is defined; the
+        spectral action is real and causal.
+
+        \item \textit{Two helicity-$\pm 2$ graviton modes}
+        (Lorentz/CausalPropagation §3): scalar and vector sectors are non-dynamical in IR;
+        polarization content matches general relativity.
+
+        \item \textit{$k^4$ dispersion correction}
+        (Lorentz/CausalPropagation §3): $\gamma = 1/(180\zeta)$; $\gamma = 1/30$ in the
+        natural spectral scheme.
+
+        \item \textit{Tensorial BI uniqueness conditional on [H-ext]}
+        (Gravity Theorem~1): the Eddington-inspired BI form is the unique admissible
+        completion.
+        Conditionality is sharply localised to Lemma~1 (coherence extensivity from [H-ext]);
+        Lemmas~2 and~3 are unconditional.
+      \end{enumerate}
+
+    \subsection{Open hypotheses}
+      \label{sec:open-hyp}
+
+      \begin{enumerate}
+        \item \textit{[H-ext] (admissible coherence extensivity)}.
+        The derivation of [H-ext] from Axiom A3 (non-factorisability) is structurally
+        motivated but not yet analytically closed.
+        [H-ext] occupies an analogous status to $[\mathrm{H\text{-}color}]$ in the spectral
+        admissibility sub-programme: the result it conditions (BI uniqueness) is the
+        correct structural output; the hypothesis localises the remaining analytical gap.
+
+        \item \textit{Full Lorentzian signature of the Einstein equilibrium condition.}
+        Thermodynamics Theorem~4.3 is proved in Riemannian signature.
+        The analytic continuation of $K(x,x;t)$ and of the first law to the Lorentzian
+        setting (beyond the linearized Lorentz/CausalPropagation result) is open.
+
+        \item \textit{Coupled field equations with matter.}
+        The spectral stress tensor $T_{\mu\nu}^{(\Pi)}$ is defined formally from the
+        projected matter functional $W_\Pi[g,\psi]$.
+        Its explicit construction in terms of standard matter fields, and the derivation
+        of the full coupled $G_{\mu\nu} = 8\pi\GN T_{\mu\nu}$ in Lorentzian signature,
+        remain open.
+      \end{enumerate}
 
   \section{Open Deliverables}
-  % TODO
+    \label{sec:open}
 
-  \bibliographystyle{plain}
-  \bibliography{cosmochrony-bibliography}
+    Three open items define the boundary of the sub-programme.
+
+    \textbf{Open deliverable 1: Analytical proof of [H-ext].}
+    This is the sole conditionality of the BI uniqueness result.
+    Resolving [H-ext] would promote Gravity Theorem~1 to an unconditional theorem.
+
+    \textbf{Open deliverable 2: Full Lorentzian Einstein equilibrium.}
+    The spectral equilibrium derivation of $G_{\mu\nu} = 8\pi\GN T_{\mu\nu}^{(\Pi)}$ is
+    currently Riemannian.
+    A fully covariant Lorentzian formulation, integrating the Schwinger--Keldysh
+    prescription of Lorentz/CausalPropagation with the spectral equilibrium principle of
+    Thermodynamics, is an open structural programme.
+
+    \textbf{Open deliverable 3: Coupled field equations with matter in Lorentzian signature.}
+    The full system $G_{\mu\nu} = 8\pi\GN T_{\mu\nu}$ with explicit matter fields
+    and without the current-free restriction is the primary open deliverable of the
+    gravitational sector.
+    It requires identifying the admissible projected sector for each matter species,
+    a task that awaits the completion of Note~6 (Fermionic Matter Sub-Programme).
+
+  \section{Conclusion}
+    \label{sec:conclusion}
+
+    The spectral gravity sub-programme derives gravitational dynamics from the projective
+    spectral entropy functional $\SPI[g] = \tfrac{1}{2}\log\det' A_g$.
+
+    The Einstein tensor arises as the $a_2$ infrared-dominant response of the renormalized
+    metric variation (Gravity~3.0), reformulated without causal assumptions as the
+    Euler--Lagrange condition of a spectral equilibrium principle (Thermodynamics).
+    Two transverse-traceless helicity-$\pm 2$ graviton modes propagate causally in the
+    Lorentzian completion, with a universal $k^4$ correction suppressed by $\lsp^2$
+    (Lorentz/CausalPropagation).
+    The unique ultraviolet completion is the Eddington-inspired Born--Infeld action,
+    conditional on [H-ext] (Gravity Theorem~1, BornInfeld).
+
+    The sub-programme does not address Yang--Mills dynamics or the gauge--gravity coupling
+    ratio; those belong to Note~8.
+    The full coupled Einstein field equations with matter in Lorentzian signature remain
+    the primary open deliverable.
+
+    \newpage
+    \bibliographystyle{plain}
+    \bibliography{cosmochrony-bibliography}
 
 \end{document}
