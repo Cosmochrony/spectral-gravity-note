@@ -56,7 +56,7 @@ Four conceptually distinct stages:
 | 1 | **Gravity 3.0** (Beau2026h) — *Infrared Einstein Response from a Renormalized Spectral Entropy Functional* | IR Einstein response, induced $G_N \sim 16\pi^2 \ell_{\mathrm{sp}}^2$, BI tensorial uniqueness | [`../gravity/`](../gravity/README.md) |
 | 2 | **Thermodynamics** (Beau2026Thermodynamics) — local spectral first law, Einstein equation as spectral equilibrium | Spectral equilibrium | [`../thermodynamics/`](../thermodynamics/README.md) |
 | 3 | **Lorentz / CausalPropagation** (Beau2026i) — Lorentzian completion, gravitons, $k^4$ dispersion | Causal completion | [`../lorentz-paper/`](../lorentz-paper/README.md) |
-| 4 | **BornInfeld** (Beau2026c) — scalar BI uniqueness, parity $\chi \mapsto -\chi$ as an equivariant symmetry | UV completion | [`../born-infeld-paper/`](../born-infeld-paper/README.md) |
+| 4 | **BornInfeld** (Beau2026c) — scalar BI uniqueness, parity $\chi \mapsto -\chi$ as a response-family covariance | UV completion | [`../born-infeld-paper/`](../born-infeld-paper/README.md) |
 
 ## Status of Results
 
