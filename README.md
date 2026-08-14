@@ -56,12 +56,13 @@ Four conceptually distinct stages:
 | 1 | **Gravity 3.0** (Beau2026h) — *Infrared Einstein Response from a Renormalized Spectral Entropy Functional* | IR Einstein response, induced $G_N \sim 16\pi^2 \ell_{\mathrm{sp}}^2$, BI tensorial uniqueness | [`../gravity/`](../gravity/README.md) |
 | 2 | **Thermodynamics** (Beau2026Thermodynamics) — local spectral first law, Einstein equation as spectral equilibrium | Spectral equilibrium | [`../thermodynamics/`](../thermodynamics/README.md) |
 | 3 | **Lorentz / CausalPropagation** (Beau2026i) — Lorentzian completion, gravitons, $k^4$ dispersion | Causal completion | [`../lorentz-paper/`](../lorentz-paper/README.md) |
-| 4 | **BornInfeld** (Beau2026c) — scalar BI uniqueness, parity involution $\chi \mapsto -\chi$ | UV completion | [`../born-infeld-paper/`](../born-infeld-paper/README.md) |
+| 4 | **BornInfeld** (Beau2026c) — scalar BI uniqueness, parity $\chi \mapsto -\chi$ as an equivariant symmetry | UV completion | [`../born-infeld-paper/`](../born-infeld-paper/README.md) |
 
 ## Status of Results
 
 **Proved (unconditional):**
-- Scalar BI uniqueness and parity involution (BornInfeld).
+- Scalar BI uniqueness and the equivariant parity of the BI action (BornInfeld; the
+  identification of the parity orbit with the fibres of $\Pi$ is an open problem, O18).
 - Spectral carrier identification: $X = \ell_{\mathrm{sp}}^2 g^{-1}R$ (Gravity Lemma 3).
 - Scalar BI reduction $h(\lambda) = \tfrac{1}{2}\log(1 + \lambda)$ (Gravity Lemma 2).
 
