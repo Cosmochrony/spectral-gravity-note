@@ -61,7 +61,7 @@ Four conceptually distinct stages:
 ## Status of Results
 
 **Proved (unconditional):**
-- Scalar BI uniqueness and the equivariant parity of the BI action (BornInfeld; the
+- Scalar BI uniqueness and the parity covariance of the BI response family (BornInfeld; the
   identification of the parity orbit with the fibres of $\Pi$ is an open problem, O18).
 - Spectral carrier identification: $X = \ell_{\mathrm{sp}}^2 g^{-1}R$ (Gravity Lemma 3).
 - Scalar BI reduction $h(\lambda) = \tfrac{1}{2}\log(1 + \lambda)$ (Gravity Lemma 2).
