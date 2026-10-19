@@ -21,10 +21,11 @@ matching data, not predictions. Gravity emerging as a spectral response remains 
 possibility, not an established result.
 
 The metric is **supplied**. The emergent geometry sub-programme (Presentation Note 2) addresses
-its reconstruction: under the spatial-limit hypothesis [H-L] and the open lifting hypothesis
-[H-lift], Q5b extracts a rank-three co-metric, and a co-metric proportional to $\eta^{\mu\nu}$
+its reconstruction: under the unestablished spatial-limit hypothesis [H-L] and the open lifting
+hypothesis [H-lift], Q5b extracts a rank-three co-metric, and a co-metric proportional to $\eta^{\mu\nu}$
 holds only for a supplied rank-four extension satisfying the hypotheses of Q11 Corollary 6.1,
-after rescaling $\tau$, with its overall scale free. No metric coefficient value is established.
+after rescaling $\tau$, with its overall scale free. Relating the supplied Riemannian metric to a
+Lorentzian form needs a continuation that is not performed. No metric coefficient value is established.
 The gauge dynamics ($a_4$ Yang--Mills response) belongs to Presentation Note 8.
 
 ## Logical Chain
@@ -49,7 +50,8 @@ Four conceptually distinct stages:
 2. **Conditional Einstein--matter coupling** (Thermodynamics): given supplied renormalized
    coefficients and a projected matter functional $W_\Pi[g, \psi]$, stationarity of
    $\Gamma_\Pi = \mathcal{S}_\Pi^{\mathrm{ren}} - W_\Pi$ yields
-   $G_{\mu\nu} + \Lambda_{\mathrm{ren}} g_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ on the Euclidean section.
+   $G_{\mu\nu} + \Lambda_{\mathrm{ren}} g_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ on the Euclidean section, at
+   leading local infrared order.
    The heat-kernel scale $u = -\partial_t \log K$ is an eigenvalue scale, not a temperature, so no
    local first law follows from the heat kernel alone.
 3. **Lorentzian truncation** (Lorentz/CausalPropagation): on the posited local four-derivative
@@ -87,7 +89,8 @@ Four conceptually distinct stages:
 **Structural and conditional:**
 - Infrared dominance of $G_{\mu\nu}$ when $R L_4^2 \ll 1$, conditional on supplied coefficients
   (Gravity).
-- Conditional Einstein--matter coupling on the Euclidean section (Thermodynamics).
+- Conditional Einstein--matter coupling on the Euclidean section, at leading local infrared order
+  (Thermodynamics).
 - Admissibility, without unique selection, of the Born--Infeld completion, conditional on [H-ext]
   (Gravity).
 - Capacity axiom [A-cap] and Born--Infeld saturation candidate (BornInfeld).
@@ -105,8 +108,8 @@ Four conceptually distinct stages:
 4. **Coupled field equations with matter**, pending the Fermionic Matter Sub-Programme (Note 6).
 
 The emergent reading of the metric needs [H-L], [H-lift], a rank-four extension of the rank-three
-co-metric of Q5b that no source constructs, and data fixing the metric coefficients, which no
-source supplies.
+co-metric of Q5b that no source constructs, a continuation from Riemannian signature that is not
+performed, and data fixing the metric coefficients, which no source supplies.
 
 ## Compilation
 
