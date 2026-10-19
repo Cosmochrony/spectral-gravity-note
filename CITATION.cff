@@ -1,17 +1,18 @@
 cff-version: 1.2.0
 message: "If you cite this work, please use the metadata from this file."
-title: "The Spectral Gravity Sub-Programme Presentation Note 4"
+title: "The Spectral Gravity Sub-Programme (Presentation Note 4)"
 type: software
 authors:
   - family-names: "Beau"
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/spectral-gravity-note"
 url: "https://cosmochrony.org/science/spectral-gravity/"
+version: "2.2"
 doi: "10.5281/zenodo.20533351"
 license: "CC-BY-4.0"
 preferred-citation:
   type: article
-  title: "The Spectral Gravity Sub-Programme Presentation Note 4"
+  title: "The Spectral Gravity Sub-Programme (Presentation Note 4)"
   authors:
     - family-names: "Beau"
       given-names: "Jérôme"

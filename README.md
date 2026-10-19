@@ -1,90 +1,112 @@
 This repository contains the source of the **Spectral Gravity Presentation Note** Cosmochrony paper
-*The Spectral Gravity Sub-Programme — Presentation Note 4*
+*The Spectral Gravity Sub-Programme (Presentation Note 4)*.
 
 This work is a **structured entry point** to the spectral gravity sub-programme of the
-Cosmochrony corpus, not a summary of results. It maps the constituent papers, identifies
-the internal phases, records the status of every result as proved, structural, numerical,
-or open, and states the remaining open deliverables.
+Cosmochrony corpus, not a summary of results. It maps the constituent papers, records the status
+of every result as proved, structural, conditional, or open, and states the remaining open
+deliverables.
 
 ## Central Question
 
-The emergent geometry sub-programme (Presentation Note 2) reconstructs the effective
-Lorentzian metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ as a forced output of the admissibility
-structure of the non-injective projection $\Pi$.
+> Under which conditions does the projective spectral entropy functional
+> $\mathcal{S}_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ produce an Einstein sector as its metric
+> variation, for a supplied Riemannian metric $g$?
 
-> Why does the projective spectral entropy functional
-> $\mathcal{S}_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ produce the Einstein equations as its
-> metric variation, and how is this dynamics completed causally and ultraviolet-wise?
+The sub-programme separates the physical proper-time cutoff (power-sensitive terms
+$a_0\Lambda^4$, $a_2\Lambda^2$) from zeta regularization (finite and logarithmic terms governed
+by $a_4$), decomposes the renormalized metric variation into Einstein, cosmological,
+higher-derivative, and non-local sectors, and states the conditions under which the Einstein term
+dominates. The renormalized couplings, including the sign and value of Newton's constant, are
+matching data, not predictions. Gravity emerging as a spectral response remains a structural
+possibility, not an established result.
 
-The sub-programme establishes that the Einstein equations $G_{\mu\nu} = 8\pi G_N
-T_{\mu\nu}^{(\Pi)}$ emerge as the infrared-dominant $a_2$ response of the renormalized
-spectral entropy functional, not as a postulated dynamics. This note concerns the
-**derivation** of gravitational dynamics in the matter-free IR; the gauge--gravity
-stratification belongs to Presentation Note 8.
+The metric is **supplied**. The emergent geometry sub-programme (Presentation Note 2) addresses
+its reconstruction: under the spatial-limit hypothesis [H-L] and the open lifting hypothesis
+[H-lift], Q5b extracts a rank-three co-metric, and a co-metric proportional to $\eta^{\mu\nu}$
+holds only for a supplied rank-four extension satisfying the hypotheses of Q11 Corollary 6.1,
+after rescaling $\tau$, with its overall scale free. No metric coefficient value is established.
+The gauge dynamics ($a_4$ Yang--Mills response) belongs to Presentation Note 8.
 
 ## Logical Chain
 
-$\mathcal{S}_\Pi[g] = \tfrac{1}{2}\log\det' A_g
+$$\mathcal{S}_\Pi[g] = \tfrac{1}{2}\log\det' A_g
 \;\Longrightarrow\;
-\delta_g\mathcal{S}_\Pi \ni c_{\mathrm{EH}}\, G_{\mu\nu}
+\delta_g\mathcal{S}_\Pi^{\mathrm{ren}} \ni c_{\mathrm{EH}}^{\mathrm{ren}}\, G_{\mu\nu}
 \;\Longrightarrow\;
-G_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}
+G_{\mu\nu} + \Lambda_{\mathrm{ren}} g_{\mu\nu} = 8\pi G_N T_{\mu\nu}
 \;\Longrightarrow\;
-\omega^2 = c^2 k^2 - \gamma \ell_{\mathrm{sp}}^2 k^4
+\omega^2 = |\mathbf{k}|^2
 \;\Longrightarrow\;
-\sqrt{-\det(g + \ell_{\mathrm{sp}}^2 R)}.$
+\sqrt{-\det(g + \ell_{\mathrm{sp}}^2 R)} \in \{\Phi_a\}$$
 
 Four conceptually distinct stages:
 
-1. **IR Einstein response** — the $a_2$ pole of the renormalized metric variation is
-   infrared-dominant in $R\ell_{\mathrm{sp}}^2 \ll 1$ (Gravity 3.0).
-2. **Spectral equilibrium** — the Einstein field equations as Euler--Lagrange of
-   $\mathcal{S}_\Pi$ at fixed projected matter content, with no horizon or Rindler
-   structure invoked (Thermodynamics).
-3. **Causal completion** — Lorentzian Schwinger--Keldysh prescription, two
-   transverse-traceless helicity-$\pm 2$ graviton modes, dispersion
-   $\omega^2 = c^2 k^2 - \gamma \ell_{\mathrm{sp}}^2 k^4$ with $\gamma = 1/30$
-   (Lorentz/CausalPropagation).
-4. **UV completion** — the Eddington-inspired Born--Infeld action as the unique tensorial
-   completion of the Einstein--Hilbert sector under conditions (C1)--(C5) and Hypothesis
-   [H-ext] (BornInfeld + Gravity Theorem 1).
+1. **Decomposition and conditional infrared dominance** (Gravity): the Einstein term dominates
+   locally when $R L_4^2 \ll 1$, with $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$.
+   One minimal scalar contributes $\Delta c_{\mathrm{EH}} = -\Lambda^2/[12(4\pi)^2]$; the finite
+   renormalized value, its sign, and $G_N > 0$ require a matching condition and the complete operator
+   content.
+2. **Conditional Einstein--matter coupling** (Thermodynamics): given supplied renormalized
+   coefficients and a projected matter functional $W_\Pi[g, \psi]$, stationarity of
+   $\Gamma_\Pi = \mathcal{S}_\Pi^{\mathrm{ren}} - W_\Pi$ yields
+   $G_{\mu\nu} + \Lambda_{\mathrm{ren}} g_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ on the Euclidean section.
+   The heat-kernel scale $u = -\partial_t \log K$ is an eigenvalue scale, not a temperature, so no
+   local first law follows from the heat kernel alone.
+3. **Lorentzian truncation** (Lorentz/CausalPropagation): on the posited local four-derivative
+   transverse-traceless kernel $\Box(c_{\mathrm{EH}} + \beta\Box)$, the massless branch is exactly
+   luminal, $\omega^2 = |\mathbf{k}|^2$, beside a massive spin-two pole of opposite residue. No
+   quartic dispersion and no observational bound on $\ell_{\mathrm{sp}}$ follow; a Lorentzian
+   spectral action requires an in-in construction, which is open.
+4. **Ultraviolet completion: admissibility without uniqueness** (Gravity, BornInfeld): under
+   conditions (C1)--(C5) and Hypothesis [H-ext], the determinantal Born--Infeld density is an
+   admissible member of the family $\Phi(X) = \exp\sum_i h(\lambda_i)$, and the explicit family
+   $\Phi_a(X) = \sqrt{\det(I+X)}\,e^{a\,\mathrm{tr}X^2}$ shows that it is not uniquely selected.
 
 ## Constituent Papers
 
 | # | Paper | Stage | Local path |
 |---|-------|-------|------------|
-| 1 | **Gravity 3.0** (Beau2026h) — *Infrared Einstein Response from a Renormalized Spectral Entropy Functional* | IR Einstein response, induced $G_N \sim 16\pi^2 \ell_{\mathrm{sp}}^2$, BI tensorial uniqueness | [`../gravity/`](../gravity/README.md) |
-| 2 | **Thermodynamics** (Beau2026Thermodynamics) — local spectral first law, Einstein equation as spectral equilibrium | Spectral equilibrium | [`../thermodynamics/`](../thermodynamics/README.md) |
-| 3 | **Lorentz / CausalPropagation** (Beau2026i) — Lorentzian completion, gravitons, $k^4$ dispersion | Causal completion | [`../lorentz-paper/`](../lorentz-paper/README.md) |
-| 4 | **BornInfeld** (Beau2026c) — scalar BI uniqueness, parity $\chi \mapsto -\chi$ as a response-family covariance | UV completion | [`../born-infeld-paper/`](../born-infeld-paper/README.md) |
+| 1 | **Gravity** (Beau2026h) — *Conditions for an Infrared Einstein Sector from Spectral Geometry* | Scheme separation, infrared decomposition, matching status, classification of the tensorial completions | [`../gravity/`](../gravity/README.md) |
+| 2 | **Thermodynamics** (Beau2026Thermodynamics) — *Einstein–Matter Coupling from Spectral Stationarity: A Conditional Variational Result and the Open Thermodynamic Bridge* | Conditional Einstein–matter coupling | [`../thermodynamics/`](../thermodynamics/README.md) |
+| 3 | **Lorentz / CausalPropagation** (Beau2026i) — *No Quartic Graviton Dispersion from the Local Covariant Four-Derivative Truncation* | Lorentzian truncation | [`../lorentz-paper/`](../lorentz-paper/README.md) |
+| 4 | **BornInfeld** (Beau2026c) — *Bounded Relational Capacity and Its Conditional Continuum Dynamics* | Capacity axiom [A-cap], Born–Infeld saturation candidate | [`../born-infeld-paper/`](../born-infeld-paper/README.md) |
 
 ## Status of Results
 
-**Proved (unconditional):**
-- Scalar BI uniqueness and the parity covariance of the BI response family (BornInfeld; the
-  identification of the parity orbit with the fibres of $\Pi$ is an open problem, O18).
-- Spectral carrier identification: $X = \ell_{\mathrm{sp}}^2 g^{-1}R$ (Gravity Lemma 3).
-- Scalar BI reduction $h(\lambda) = \tfrac{1}{2}\log(1 + \lambda)$ (Gravity Lemma 2).
+**Proved (given stated inputs):**
+- Scheme separation: the proper-time cutoff carries $a_0\Lambda^4$ and $a_2\Lambda^2$, zeta
+  regularization the finite and logarithmic $a_4$ terms (Gravity).
+- One-scalar cutoff contribution $\Delta c_{\mathrm{EH}} = -\Lambda^2/[12(4\pi)^2]$ (Gravity).
+- Spectral carrier identification $X = \ell_{\mathrm{sp}}^2 g^{-1}R$ and the constraints on the
+  sector function, whence non-uniqueness via $\Phi_a$ (Gravity).
+- Dimensional status of the heat-kernel scale: an eigenvalue scale, not a temperature
+  (Thermodynamics).
+- Factorization of the posited transverse-traceless kernel: exactly luminal massless branch,
+  opposite-residue massive spin-two pole (Lorentz/CausalPropagation).
 
-**Structural:**
-- IR hierarchy and IR dominance of $G_{\mu\nu}$ (Gravity §4.5).
-- Induced Newton constant $G_N \sim 16\pi^2 \ell_{\mathrm{sp}}^2$ (Gravity §5).
-- Spectral multiplier field and first law (Thermodynamics §2--3).
-- Einstein equation as spectral equilibrium (Thermodynamics Theorem 4.3).
-- Lorentzian Schwinger--Keldysh kernel, two helicity-$\pm 2$ modes, $\gamma = 1/30$
-  dispersion (Lorentz/CausalPropagation §2--3).
+**Structural and conditional:**
+- Infrared dominance of $G_{\mu\nu}$ when $R L_4^2 \ll 1$, conditional on supplied coefficients
+  (Gravity).
+- Conditional Einstein--matter coupling on the Euclidean section (Thermodynamics).
+- Admissibility, without unique selection, of the Born--Infeld completion, conditional on [H-ext]
+  (Gravity).
+- Capacity axiom [A-cap] and Born--Infeld saturation candidate (BornInfeld).
 
-**Conditional on [H-ext]:**
-- Tensorial BI uniqueness (Gravity Theorem 1, Lemma 1 only).
+**Interpretive:**
+- The stratification $a_2 \to$ gravity, $a_4 \to$ gauge is an organising reading shared with
+  Presentation Note 8, not a theorem.
 
 ## Open Deliverables
 
-1. **Analytical proof of [H-ext]** (admissible coherence extensivity) — promotes Gravity
-   Theorem 1 to unconditional.
-2. **Full Lorentzian Einstein equilibrium** — extend Thermodynamics Theorem 4.3 beyond
-   Riemannian signature, integrating the Schwinger--Keldysh prescription.
-3. **Coupled $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ with matter** — pending the Fermionic
-   Matter Sub-Programme (Note 6).
+1. **Matching principle for the renormalized couplings**: the sign and value of
+   $c_{\mathrm{EH}}^{\mathrm{ren}}$, hence $G_N$.
+2. **Analytical proof of [H-ext] and a selection principle for the completion.**
+3. **In-in Lorentzian spectral action and Lorentzian stationarity.**
+4. **Coupled field equations with matter**, pending the Fermionic Matter Sub-Programme (Note 6).
+
+The emergent reading of the metric needs [H-L], [H-lift], a rank-four extension of the rank-three
+co-metric of Q5b that no source constructs, and data fixing the metric coefficients, which no
+source supplies.
 
 ## Compilation
 
@@ -96,4 +118,4 @@ Produces `out/SpectralGravityNote.pdf`.
 
 ## Citation
 
-To be assigned upon first Zenodo publication.
+Concept DOI: [10.5281/zenodo.20533351](https://doi.org/10.5281/zenodo.20533351).
