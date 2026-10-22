@@ -62,7 +62,7 @@ Four conceptually distinct stages:
 4. **Ultraviolet completion: admissibility without uniqueness** (Gravity, BornInfeld): under
    conditions (C1)--(C5) and Hypothesis [H-ext], the determinantal Born--Infeld density is an
    admissible member of the family $\Phi(X) = \exp\sum_i h(\lambda_i)$ on the mixed Ricci carrier $X$, which
-   the saturation condition applied to $X$ selects, and the explicit family
+   the saturation condition applied to $X$ selects among linear two-derivative carriers, and the explicit family
    $\Phi_a(X) = \sqrt{\det(I+X)}\,e^{a\,\mathrm{tr}X^2}$ shows that it is not uniquely selected.
 
 ## Constituent Papers
@@ -85,7 +85,7 @@ Four conceptually distinct stages:
   $t = \mathrm{tr}\,X$ and $X_0$ the traceless part of $X = \ell_{\mathrm{sp}}^2 g^{-1}R$): all give the same linear
   term, second-order data determine at most $|1-\alpha d|$, leaving the pair $\{\alpha, 2/d-\alpha\}$, and the
   carriers differ in their saturation boundary; within this classification $\alpha$ is free, and the saturation
-  condition applied as stated to $X$ selects $\alpha = 0$ (Gravity, Theorem 1). The constraints on the sector
+  condition applied as stated to $X$ selects $\alpha = 0$ (Gravity, Theorem 1(o), which does not use [H-ext]). The constraints on the sector
   function, whence non-uniqueness via $\Phi_a$ (Gravity).
 - Dimensional status of the heat-kernel scale: an eigenvalue scale, not a temperature
   (Thermodynamics).
