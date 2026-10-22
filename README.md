@@ -43,7 +43,7 @@ G_{\mu\nu} + \Lambda_{\mathrm{ren}} g_{\mu\nu} = 8\pi G_N T_{\mu\nu}
 Four conceptually distinct stages:
 
 1. **Decomposition and conditional infrared dominance** (Gravity): the Einstein term dominates
-   locally when $R L_4^2 \ll 1$, with $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$.
+   locally, by power counting, when the matched Einstein coefficient is non-zero and $R L_4^2 \ll 1$, with $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$.
    One minimal scalar contributes $\Delta c_{\mathrm{EH}} = -\Lambda^2/[12(4\pi)^2]$; the finite
    renormalized value, its sign, and $G_N > 0$ require a matching condition and the complete operator
    content.
@@ -61,7 +61,8 @@ Four conceptually distinct stages:
    spectral action requires an in-in construction, which is open.
 4. **Ultraviolet completion: admissibility without uniqueness** (Gravity, BornInfeld): under
    conditions (C1)--(C5) and Hypothesis [H-ext], the determinantal Born--Infeld density is an
-   admissible member of the family $\Phi(X) = \exp\sum_i h(\lambda_i)$, and the explicit family
+   admissible member of the family $\Phi(X) = \exp\sum_i h(\lambda_i)$ on the mixed Ricci carrier $X$, which
+   the saturation condition applied to $X$ selects, and the explicit family
    $\Phi_a(X) = \sqrt{\det(I+X)}\,e^{a\,\mathrm{tr}X^2}$ shows that it is not uniquely selected.
 
 ## Constituent Papers
@@ -80,17 +81,20 @@ Four conceptually distinct stages:
   regularization the finite and logarithmic $a_4$ terms (Gravity).
 - One-scalar cutoff contribution $\Delta c_{\mathrm{EH}} = -\Lambda^2/[12(4\pi)^2]$ (Gravity).
 - Spectral carrier family $Y_\alpha = \tfrac{t}{d}I + X_0/(1-\alpha d)$, $\alpha \neq 1/d$, for carriers linear in
-  the curvature (with $t = \mathrm{tr}\,X$ and $X_0$ the traceless part of $X = \ell_{\mathrm{sp}}^2 g^{-1}R$): all give
-  the same linear term, they differ at second order and in their saturation boundary, and $\alpha = 0$ is a
-  convention; and the constraints on the sector function, whence non-uniqueness via $\Phi_a$ (Gravity).
+  the curvature, of two-derivative order and with a spectrum that is not a multiple of the identity (with
+  $t = \mathrm{tr}\,X$ and $X_0$ the traceless part of $X = \ell_{\mathrm{sp}}^2 g^{-1}R$): all give the same linear
+  term, second-order data determine at most $|1-\alpha d|$, leaving the pair $\{\alpha, 2/d-\alpha\}$, and the
+  carriers differ in their saturation boundary; within this classification $\alpha$ is free, and the saturation
+  condition applied as stated to $X$ selects $\alpha = 0$ (Gravity, Theorem 1). The constraints on the sector
+  function, whence non-uniqueness via $\Phi_a$ (Gravity).
 - Dimensional status of the heat-kernel scale: an eigenvalue scale, not a temperature
   (Thermodynamics).
 - Factorization of the posited transverse-traceless kernel: exactly luminal massless branch,
   opposite-residue massive spin-two pole (Lorentz/CausalPropagation).
 
 **Structural and conditional:**
-- Infrared dominance of $G_{\mu\nu}$ when $R L_4^2 \ll 1$, conditional on supplied coefficients
-  (Gravity).
+- Local infrared dominance of $G_{\mu\nu}$ for a non-zero matched Einstein coefficient and $R L_4^2 \ll 1$, by
+  power counting, conditional on supplied coefficients, with no general bound on the non-local terms (Gravity).
 - Conditional Einstein--matter coupling on the Euclidean section, at leading local infrared order
   (Thermodynamics).
 - Admissibility, without unique selection, of the Born--Infeld completion, conditional on [H-ext]
