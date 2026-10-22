@@ -85,7 +85,8 @@ Four conceptually distinct stages:
   $t = \mathrm{tr}\,X$ and $X_0$ the traceless part of $X = \ell_{\mathrm{sp}}^2 g^{-1}R$): all give the same linear
   term, second-order data determine at most $|1-\alpha d|$, leaving the pair $\{\alpha, 2/d-\alpha\}$, and the
   carriers differ in their saturation boundary; within this classification $\alpha$ is free, and the saturation
-  condition applied as stated to $X$ selects $\alpha = 0$ (Gravity, Theorem 1(o), which does not use [H-ext]). The constraints on the sector
+  condition applied as stated to $X$ selects $\alpha = 0$ among the completers $\exp\sum_i h(\mu_i)$ built on these
+  carriers (Gravity, Theorem 1(o), which does not use [H-ext]). The constraints on the sector
   function, whence non-uniqueness via $\Phi_a$ (Gravity).
 - Dimensional status of the heat-kernel scale: an eigenvalue scale, not a temperature
   (Thermodynamics).
