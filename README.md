@@ -79,8 +79,10 @@ Four conceptually distinct stages:
 - Scheme separation: the proper-time cutoff carries $a_0\Lambda^4$ and $a_2\Lambda^2$, zeta
   regularization the finite and logarithmic $a_4$ terms (Gravity).
 - One-scalar cutoff contribution $\Delta c_{\mathrm{EH}} = -\Lambda^2/[12(4\pi)^2]$ (Gravity).
-- Spectral carrier identification $X = \ell_{\mathrm{sp}}^2 g^{-1}R$ and the constraints on the
-  sector function, whence non-uniqueness via $\Phi_a$ (Gravity).
+- Spectral carrier family $Y_\alpha = \tfrac{t}{d}I + X_0/(1-\alpha d)$, $\alpha \neq 1/d$, for carriers linear in
+  the curvature (with $t = \mathrm{tr}\,X$ and $X_0$ the traceless part of $X = \ell_{\mathrm{sp}}^2 g^{-1}R$): all give
+  the same linear term, they differ at second order and in their saturation boundary, and $\alpha = 0$ is a
+  convention; and the constraints on the sector function, whence non-uniqueness via $\Phi_a$ (Gravity).
 - Dimensional status of the heat-kernel scale: an eigenvalue scale, not a temperature
   (Thermodynamics).
 - Factorization of the posited transverse-traceless kernel: exactly luminal massless branch,
