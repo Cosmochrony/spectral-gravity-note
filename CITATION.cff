@@ -7,7 +7,7 @@ authors:
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/spectral-gravity-note"
 url: "https://cosmochrony.org/science/spectral-gravity/"
-version: "2.3"
+version: "2.4"
 doi: "10.5281/zenodo.20533351"
 license: "CC-BY-4.0"
 preferred-citation:
