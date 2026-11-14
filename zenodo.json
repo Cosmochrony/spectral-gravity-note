@@ -5,5 +5,5 @@
   "main_tex": "tex/SpectralGravityNote.tex",
   "zenodo_id": 20533351,
   "doi": "10.5281/zenodo.20533351",
-  "notes": "Version 2.5 corrects two attributions to the BornInfeld companion paper. The spectral length scale ℓ_sp is the proper-time cutoff length of Gravity; BornInfeld introduces no continuum length. The admissibility conditions (C1)–(C5) of the tensorial Born–Infeld completion are hypotheses of Gravity, with the completion normalised to reproduce the supplied Einstein term (Gravity version 3.9); BornInfeld, whose capacity axiom bounds a discrete per-node rate and no continuum curvature, supplies none of them. No other statement is changed."
+  "notes": "Version 2.5 corrects two attributions to the BornInfeld companion paper. The spectral length scale ℓ_sp is the proper-time cutoff length of Gravity; BornInfeld does not define ℓ_sp and does not fix the relation between c_BI and any continuum length. The admissibility conditions (C1)–(C5) of the tensorial Born–Infeld completion are hypotheses of Gravity, with the completion normalised to reproduce the supplied Einstein term (Gravity version 3.9); BornInfeld, whose capacity axiom bounds a discrete per-node rate and no continuum curvature, supplies none of them. No other statement is changed."
 }
