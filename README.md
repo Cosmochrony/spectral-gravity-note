@@ -59,8 +59,8 @@ Four conceptually distinct stages:
    luminal, $\omega^2 = |\mathbf{k}|^2$, beside a massive spin-two pole of opposite residue. No
    quartic dispersion and no observational bound on $\ell_{\mathrm{sp}}$ follow; a Lorentzian
    spectral action requires an in-in construction, which is open.
-4. **Ultraviolet completion: admissibility without uniqueness** (Gravity, BornInfeld): under
-   conditions (C1)--(C5) and Hypothesis [H-ext], the determinantal Born--Infeld density is an
+4. **Ultraviolet completion: admissibility without uniqueness** (Gravity): under
+   conditions (C1)--(C5), which are hypotheses of Gravity and are not supplied by BornInfeld, and Hypothesis [H-ext], the determinantal Born--Infeld density is an
    admissible member of the family $\Phi(X) = \exp\sum_i h(\lambda_i)$ on the mixed Ricci carrier $X$, which
    the saturation condition applied to $X$ selects among linear two-derivative carriers, and the explicit family
    $\Phi_a(X) = \sqrt{\det(I+X)}\,e^{a\,\mathrm{tr}X^2}$ shows that it is not uniquely selected.
